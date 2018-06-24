@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket Client</title>
+</head>
+
+
+<body>
+<input id="inp">
+<button id="btn">send</button>
+
+<div id="result">Value</div>
+<script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket =io();
+        let x=document.getElementById('result');
+        let inp=document.getElementById('inp');
+        let btn=document.getElementById('btn');
+
+        btn.onclick=function () {
+            let val=inp.value;
+            socket.emit('message',"hello");
+            socket.on('chat',function (data) {
+                console.log(x);
+                 console.log(data);
+                x.innerHTML=data;
+        })
+        console.log(socket);
+
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .big-box{
+            height: 300px;
+            width: 100%;
+            border: 2px dashed red;
+        }
+        .box {
+            border: 1px solid blue;
+            height: 200px;
+            width:30%;
+            background-color: aqua;
+            display: inline-block;
+        }
+        .box2{
+            border: 1px solid green;
+            height: 80px;
+            width:30%;
+            background-color: green;
+            margin: 20px;
+            display: inline-block;
+
+        }
+        @media screen and  (min-width: 1200px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 800px) {
+            body {
+                background-color: pink;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: greenyellow;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="big-box">
+    <div   class="box">
+    </div>
+
+    <div  class="box">
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

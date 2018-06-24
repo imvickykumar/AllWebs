@@ -1,0 +1,15 @@
+.navigation{
+    background-color: aqua;
+    padding: 4px;
+}
+
+ul li{
+    list-style: none;
+}
+li:hover{
+    color: red;
+    cursor: pointer;
+}
+@media all(min-width) {
+    
+}

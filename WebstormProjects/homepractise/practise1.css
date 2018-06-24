@@ -1,0 +1,54 @@
+
+<!--just comment-->
+
+        /*for heading and image no need to use either of dot or hashtag*/
+    h1{
+        font:30px "Droid Sans";
+        color: brown;
+
+    }
+img{
+    height: 200px;
+    border: 12px solid black;
+    position: center;
+    display: inline-block;
+
+}
+/*for class use dot before name*/
+.box {
+    border: 1px solid blue;
+    height: 100%;
+    width:50%;
+    background-color: aqua;
+    display: inline-block;
+
+}
+.box2{
+    border: 1px solid green;
+    height: 100px;
+    width:50%;
+    background-color: green;
+
+}
+.box3{
+    border: 1px solid red;
+    height: 100px;
+    width:50%;
+    background-color: yellow;
+}
+.box5{
+    border: 1px solid black;
+    height: 200px;
+    width:50%;
+    background-color: red;
+
+}
+/*for id use hashtag before name*/
+#blue{
+    color: blue !important;
+}
+#red{
+    color: red;
+    font-size: 16px;
+    font-family: sans-serif;
+}

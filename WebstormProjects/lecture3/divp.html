@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .inside > p > a{
+            color: blue;
+        }
+        .inside + p{
+            color: green;
+        }
+        .inside ~ p{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="inside">
+        <a>inside a</a>
+    </div>
+    <div class="inside">
+        <p> inside div2</p>
+    </div>
+
+    <div class="inside">
+        <p> inside div4</p>
+    </div>
+    <p> outside div4</p>
+</div>
+<p>  very outside div4</p>
+
+</body>
+</html>

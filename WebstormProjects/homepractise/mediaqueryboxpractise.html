@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .big-box1{
+            height: 300px;
+            width: 100%;
+            border: 2px dashed red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .big-box2{
+            height: 300px;
+            width: 100%;
+            border: 2px dashed red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            border: 1px solid blue;
+            height: 300px;
+            width:32.333%;
+            background-color: aqua;
+            display: inline-block;
+        }
+        @media screen and  (min-width: 1200px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 800px) {
+            body {
+                background-color: pink;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="big-box1">
+    <div   class="box">
+    </div>
+
+    <div  class="box">
+    </div>
+
+    <div   class="box">
+    </div>
+</div>
+
+<div class="big-box2">
+    <div   class="box">
+    </div>
+
+    <div  class="box">
+    </div>
+
+    <div   class="box">
+    </div>
+</div>
+
+
+
+</body>
+</html>
